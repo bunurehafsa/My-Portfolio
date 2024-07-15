@@ -50,9 +50,9 @@
 /* nav styles */
 nav{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
-    margin: 20px 230px;
+    margin: 0 200px;
 }
 .nav-title{
     font-weight: 800;
@@ -232,9 +232,12 @@ a{
     display: none;
 }
 @media screen and (max-width:576px) {
-    .skills-container, .resume-container,footer,.about-items{
+    .skills-container, .resume-container,footer,.about-items,.banner,nav,nav > ul{
         flex-direction: column;
         padding: 5px;
+    }
+    nav > ul{
+        gap: 20px;
     }
     footer,.about{
         padding: 20px;
@@ -244,6 +247,18 @@ a{
     }
     footer input[type="text"],footer input[type="email"]{
         width: calc(100% - 40px);
+    }
+    .banner{
+        margin: 20px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner-profile-pic{
+        width: 100%;
     }
     
 }
