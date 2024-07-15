@@ -227,4 +227,29 @@ a{
     
     padding: 2px 8px; 
 }
+/* Responsive Media Query */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .skills-container, .resume-container,footer,.about-items{
+        flex-direction: column;
+        padding: 5px;
+    }
+    footer,.about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],footer input[type="email"]{
+        width: calc(100% - 40px);
+    }
+    
+}
+
+
+
+
+
 
